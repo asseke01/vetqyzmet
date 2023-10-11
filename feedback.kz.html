@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="wrapper2 fixed-top d-flex align-items-center">
+    <div class="logot">
+      <button class="toggle-sidebar-btn" onclick="toggleNav()" >
+          <img src="assets/img/menu_icon.svg">Мәзір</img>
+          </button>
+      <a href="index.kz.html" class="flex align-items-center">
+        <img src="assets/img/logo_kaz.svg" alt="">
+      </a>
+    </div>
+
+      <div class="boxcontainer">
+            <table class="elements_container">
+              <tr>
+                <td>
+                  <input type="text" class="search" placeholder="Іздеу">
+                </td>
+                <td>
+                <a href="" class=""><img src="assets/img/search_icon.svg"></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/img/line_icon.svg">
+        <div class="button_language"> 
+          <button class="languagebtn">KZ<img src="assets/img/dropdown_icon.svg"></img>
+          </button>
+          <div class="language_content">
+            <a href="feedback.html">RU</a>
+            <a href="feedback.kz.html">KZ</a>         
+          </div>
+        </div>
+        <img src="assets/img/line_icon.svg">
+        <div class="button_settings"> 
+          <button class="settingsbtn">
+            <img src="assets/img/setting_icon.svg">Параметрлер</img>
+          </button>
+          <div class="settings_content">
+            <a class="dropdown-item none_click" href="#">Сайттың түсі:</a>
+            <a class="dropdown-item" href="#"><img src="assets/img/sun_icon.png">Стандартты</a>
+            <a class="dropdown-item" href="#"><img src="assets/img/night_icon.png">Қараңғы тұсқағаз</a>
+            <a class="dropdown-item none_click" href="#">Қаріп өлшемі:</a>
+            <a class="dropdown-item" href="#">Стандартты</a>
+            <a class="dropdown-item big_text_btn" href="#"><h5>Үлкен</h5></a>
+            <a class="dropdown-item enlarged_btn" href="#"><h4>Үлкейтілген</h4></a>        
+          </div>
+        </div>
+        <img src="assets/img/line_icon.svg">
+          <button class="loginbtn">Кіру</button>
+  </div>
+  </header>
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.kz.html">
+          <span>Басты бет</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="news.kz.html">
+          <span>Жаңалықтар</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="help.kz.html">
+          <span>Байланыс</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="feedback.kz.html">
+          <span>Кері байланыс</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="guide.kz.html">
+          <span>Пайдаланушы нұсқаулығы</span>
+        </a>
+      </li>
+
+    </ul>
+
+  </aside>
+
+  <main id="main" class="main">
+
+    <div class="card">
+
+            <div class="card-body">
+              <img src="assets/img/vetqyzmet_icon_about.svg" class="logo_forms">
+              <h5><b>Кері байланыс</b></h5>
+              <form class="row g-2">
+                <div class="col-md-9">
+                  <label>Тегі, аты</label>
+                  <div class="input-group mb-3">
+                  <span class="input-group-text bg-transparent "><i class="bi bi-person-vcard text-primary"></i></span>
+                  <input type="text" class="form-control" placeholder="Сіздің тегіңіз, атыңыз">
+                </div>
+                </div>
+                <div class="col-md-9">
+                  <label>Байланыс E-mail</label>
+                  <div class="input-group mb-3">
+                  <span class="input-group-text bg-transparent" ><i class="bi bi-envelope text-primary"></i></span>
+                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Сіздің e-mail">
+                </div>
+                </div>
+
+                <div class="col-md-9">
+                  <label>Байланыс телефоны</label>
+                  <div class="input-group mb-3 ">
+                  <span class="input-group-text bg-transparent" ><i class="bi bi-telephone-fill text-primary"></i></span>
+                  <input type="text" class="form-control"  placeholder="+7...">
+                </div>
+                </div>
+                <div class="col-md-9">
+                  <label>Сіз қандай ақпараттық жүйені қолдандыңыз? </label>
+                  <div class="input-group mb-3">
+                  <span class="input-group-text bg-transparent" ><i class="bi bi-question-circle text-primary"></i></span>
+                  <select id="inputState" class="form-select">
+                    <option></option>
+                    <option>Идентификация сельскохозяйственных животных</option>
+                    <option>Мобильное приложение «VetMobile», для ветеринарного врача</option>
+                    <option>Мобильное приложение «Tort Tylik», для владельцев сельскохозяйственных животных</option>
+                    <option>Информационная система «Процессинговый центр»</option>
+                    <option>Информационная система «Ветеринарная санитарная экспертиза»</option>
+                    <option>Информационная система «VetLab»</option>
+                    <option>Информационная система «Ветеринарная безопасность»</option>
+                    <option>Информационная система «Карантин растений»</option>
+                    <option>Информационная система «Государственная регистрация сельскохозяйственной техники»</option>
+                  </select>
+                </div>
+                </div>
+                <div class="col-9">
+                <label for="exampleFormControlTextarea1">Егер сізде сайтты жақсарту бойынша ұсыныстар болса немесе бетте қате тапсаңыз, бізге хабарлаңыз (хабарлама мәтіні) </label>
+                <div class="input-group mb-3">
+                <span class="input-group-text bg-transparent" id="basic-addon1"><i class="bi bi-chat-left-text-fill text-primary"></i></span>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+              </div>
+                </div>
+              <div class="col-9">
+                <input class="form-control" type="file" id="formFile">
+              </div>
+              </form>
+              <br>
+                <div class="button_form text-center">
+                  <button type="submit" class="btn btn-primary">Жіберу</button>
+                </div>
+              </form>
+            </div>
+          </div>
+  </main>
+  <footer id="footer" class="footer">
+    <div class="copyright">
+    Қазақстан Республикасы Ауыл шаруашылығы министрлігі
+    </div>
+    <div class="credits">
+      Call –центр: 8(7172)79-34-19, +7(771)99-614-99 (WhatsApp)
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

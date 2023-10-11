@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+ <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="wrapper2 fixed-top d-flex align-items-center">
+    <div class="logot">
+      <button class="toggle-sidebar-btn" onclick="toggleNav()" >
+          <img src="assets/img/menu_icon.svg">Меню</img>
+          </button >
+      <a href="index.html" class="flex align-items-center">
+        <img src="assets/img/logo_icon.svg" alt="">
+      </a>
+    </div>
+
+      <div class="boxcontainer">
+            <table class="elements_container">
+              <tr>
+                <td>
+                  <input type="text" class="search" placeholder="Поиск">
+                </td>
+                <td>
+                <a href="" class=""><img src="assets/img/search_icon.svg"></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/img/line_icon.svg">
+        <div class="button_language"> 
+          <button class="languagebtn">RU<img src="assets/img/dropdown_icon.svg"></img>
+          </button>
+          <div class="language_content">
+            <a href="guide.html">RU</a>
+            <a href="guide.kz.html">KZ</a>         
+          </div>
+        </div>
+        <img src="assets/img/line_icon.svg">
+        <div class="button_settings"> 
+          <button class="settingsbtn">
+            <img src="assets/img/setting_icon.svg">Настройки</img>
+          </button>
+          <div class="settings_content">
+            <a class="dropdown-item none_click" href="#">Цвет сайта:</a>
+            <a class="dropdown-item" href="#"><img src="assets/img/sun_icon.png">Стандартный</a>
+            <a class="dropdown-item" href="#"><img src="assets/img/night_icon.png">Темная тема</a>
+            <a class="dropdown-item none_click" href="#">Размер шрифта:</a>
+            <a class="dropdown-item" href="#">Стандартный</a>
+            <a class="dropdown-item big_text_btn" href="#"><h5>Большой</h5></a>
+            <a class="dropdown-item enlarged_btn" href="#"><h4>Увеличенный</h4></a>         
+          </div>
+        </div>
+        <img src="assets/img/line_icon.svg">
+          <button class="loginbtn">Войти</button>
+  </div>
+  </header>
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <span>Главная</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="news.html">
+          <span>Новости</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="help.html">
+          <span>Контакты</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="feedback.html">
+          <span>Обратная связь</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" href="guide.html">
+          <span>Руководство пользователя</span>
+        </a>
+      </li>
+
+    </ul>
+
+  </aside>
+
+  <main id="main" class="main">
+
+    <div class="card">
+      <div class="card-body">
+              <img src="assets/img/vetqyzmet_icon_about.svg" class="logo_forms">
+              <h5><b>Руководство пользователя</b></h5>
+              <div class="col-md-6">
+                <p><h5><b>1. Основные сведения о Едином портале</b></h5></p>
+                <p>Единый портал предназначен для автоматизации процесса предоставления услуг населению (физическим и юридическим лицам) соответствующими организациями.<br>
+                    Мобильное приложение позволяет каждому владельцу сельскохозяйственного животного:</p>
+                    <p>Реализация данного портала основана на решениях, использующих принципы «одного окна», что обеспечивает прозрачность процессов обслуживания, сокращает сроки оказания услуг и упрощает процесс работы для ветеринарных специалистов.</p>
+                    <p><h5><b>2. Что нужно для работы</b></h5>Для работы с порталом необходимо:</p>
+                    <ul>
+                        <li>Действующая ЭЦП (электронная цифровая подпись);</li>
+                        <li>Установленная и запущенная программа NCALayer</li>
+                    </ul>
+                    <p>Как получить ЭЦП можно узнать, пройдя по ссылке <a href="https://pki.gov.kz/">https://pki.gov.kz/</a>или обратившись в ближайший ЦОН (центр обслуживания населения).<br>
+                        Как установить и запустить для работы программу NCALayer можно узнать, пройдя по ссылке <a href="http://pki.gov.kz/index.php/ru/ncalayer.">http://pki.gov.kz/index.php/ru/ncalayer.</a>
+                    </p>
+              </div>   
+        </div>
+    </div>
+    
+  </main>
+  <footer id="footer" class="footer">
+    <div class="copyright">
+  Министерство сельского хозяйства Республики Казахстан
+    </div>
+    <div class="credits">
+      Call –центр: 8(7172)79-34-19, +7(771)99-614-99 (WhatsApp)
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

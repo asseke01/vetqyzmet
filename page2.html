@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="wrapper2 fixed-top d-flex align-items-center">
+    <div class="logot">
+      <button class="toggle-sidebar-btn" onclick="toggleNav()" >
+          <img src="assets/img/menu_icon.svg">Меню</img>
+          </button >
+      <a href="index.html" class="flex align-items-center">
+        <img src="assets/img/logo_icon.svg" alt="">
+      </a>
+    </div>
+
+      <div class="boxcontainer">
+            <table class="elements_container">
+              <tr>
+                <td>
+                  <input type="text" class="search" placeholder="Поиск">
+                </td>
+                <td>
+                <a href="" class=""><img src="assets/img/search_icon.svg"></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/img/line_icon.svg">
+        <div class="button_language"> 
+          <button class="languagebtn">RU<img src="assets/img/dropdown_icon.svg"></img>
+          </button>
+          <div class="language_content">
+            <a href="page2.html">RU</a>
+            <a href="page2.kz.html">KZ</a>         
+          </div>
+        </div>
+        <img src="assets/img/line_icon.svg">
+        <div class="button_settings"> 
+          <button class="settingsbtn">
+            <img src="assets/img/setting_icon.svg">Настройки</img>
+          </button>
+          <div class="settings_content">
+            <a class="dropdown-item none_click" href="#">Цвет сайта:</a>
+            <a class="dropdown-item" href="#"><img src="assets/img/sun_icon.png">Стандартный</a>
+            <a class="dropdown-item" href="#"><img src="assets/img/night_icon.png">Темная тема</a>
+            <a class="dropdown-item none_click" href="#">Размер шрифта:</a>
+            <a class="dropdown-item" href="#">Стандартный</a>
+            <a class="dropdown-item big_text_btn" href="#"><h5>Большой</h5></a>
+            <a class="dropdown-item enlarged_btn" href="#"><h4>Увеличенный</h4></a>         
+          </div>
+        </div>
+        <img src="assets/img/line_icon.svg">
+          <button class="loginbtn">Войти</button>
+  </div>
+  </header>
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <span>Главная</span>
+        </a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="news.html">
+          <span>Новости</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="help.html">
+          <span>Контакты</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="feedback.html">
+          <span>Обратная связь</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="guide.html">
+          <span>Руководство пользователя</span>
+        </a>
+      </li>
+
+    </ul>
+
+  </aside>
+
+  <main id="main" class="main">
+  <div class="card">
+        <div class="card-body">
+          <img src="assets/img/vetid_icon.svg" class="logo_forms2">
+        <div class="col-10">
+          <h5><b>Информационная система «Процессинговый центр»</b></h5>
+          <p>Предназначена для подачи электронной заявки на генерацию эмиссионных индивидуальных номеров сельскохозяйственных животных, включающая сведения о зарегистрированных лазерных станциях, изделиях (средствах) и атрибутах для проведения идентификации сельскохозяйственных животных и их производителях, осуществляемая государственными ветеринарными организациями, созданными местными исполнительными органами, и используемая уполномоченным органом в области ветеринарии.</p>
+         <div class="col-9">
+          <b><p>В ИС «Процессинговый центр» предусмотрен функционал по:</p></b>
+          <ul class="list">
+            <li>- генерации номеров и оформление заявок для частного заказа (за счет владельца);</li>
+            <li>- генерации номеров и оформление заявок для государственного заказа (за счет МИО);</li>
+            <li>- отчетным данным (статистика использованных и не использованных средств идентификации);</li>
+            <li>- входу через личный кабинет ветеринарного врача;</li>
+            <li>- входу через личный кабинет поставщика средств идентификации;</li>
+            <li>- входу через личный кабинет сотрудника процессингового центра РПО;</li>
+            <li>- входу через личный кабинет сотрудника уполномоченного органа</li>
+          </ul>
+        </div>
+      </div>
+        <div class="col-9">
+          <hr>
+          <b><p>Нормативные правовые акты:</p></b>
+          <ol>
+            <li>Закон Республики Казахстан «О ветеринарии» от 10 июля 2002 года N 339 <a href="https://adilet.zan.kz/rus/docs/Z020000339_" target="_blank">https://adilet.zan.kz/rus/docs/Z020000339_ </a></li>
+            <li>Правила функционирования процессингового центра, утвержденного приказом и.о. Министра сельского хозяйства Республики Казахстан от 27 февраля 2015 года № 7-1/179 <a href="https://adilet.zan.kz/rus/docs/V1500010749" target="_blank">https://adilet.zan.kz/rus/docs/V1500010749 </a></li>
+            <li>Правила регистрации лазерных станций, изделий (средств) и атрибутов для проведения идентификации сельскохозяйственных животных и производителей, утвержденных приказом Министра сельского хозяйства Республики Казахстан от 21 июля 2015 года № 7-1/678 <a href="https://adilet.zan.kz/rus/docs/V1500011926" target="_blank">https://adilet.zan.kz/rus/docs/V1500011926  </a></li>
+          </ol>
+        </div>
+        </div>
+      </div>
+  </main>
+  <footer id="footer" class="footer">
+    <div class="copyright">
+  Министерство сельского хозяйства Республики Казахстан
+    </div>
+    <div class="credits">
+      Call –центр: 8(7172)79-34-19, +7(771)99-614-99 (WhatsApp)
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

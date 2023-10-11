@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="wrapper2 fixed-top d-flex align-items-center">
+    <div class="logot">
+      <button class="toggle-sidebar-btn" onclick="toggleNav()" >
+          <img src="assets/img/menu_icon.svg">Меню</img>
+          </button >
+      <a href="index.html" class="flex align-items-center">
+        <img src="assets/img/logo_icon.svg" alt="">
+      </a>
+    </div>
+
+      <div class="boxcontainer">
+            <table class="elements_container">
+              <tr>
+                <td>
+                  <input type="text" class="search" placeholder="Поиск">
+                </td>
+                <td>
+                <a href="" class=""><img src="assets/img/search_icon.svg"></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/img/line_icon.svg">
+        <div class="button_language"> 
+          <button class="languagebtn">RU<img src="assets/img/dropdown_icon.svg"></img>
+          </button>
+          <div class="language_content">
+            <a href="page6.html">RU</a>
+            <a href="page6.kz.html">KZ</a>         
+          </div>
+        </div>
+        <img src="assets/img/line_icon.svg">
+        <div class="button_settings"> 
+          <button class="settingsbtn">
+            <img src="assets/img/setting_icon.svg">Настройки</img>
+          </button>
+          <div class="settings_content">
+            <a class="dropdown-item none_click" href="#">Цвет сайта:</a>
+            <a class="dropdown-item" href="#"><img src="assets/img/sun_icon.png">Стандартный</a>
+            <a class="dropdown-item" href="#"><img src="assets/img/night_icon.png">Темная тема</a>
+            <a class="dropdown-item none_click" href="#">Размер шрифта:</a>
+            <a class="dropdown-item" href="#">Стандартный</a>
+            <a class="dropdown-item big_text_btn" href="#"><h5>Большой</h5></a>
+            <a class="dropdown-item enlarged_btn" href="#"><h4>Увеличенный</h4></a>         
+          </div>
+        </div>
+        <img src="assets/img/line_icon.svg">
+          <button class="loginbtn">Войти</button>
+  </div>
+  </header>
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <span>Главная</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="news.html">
+          <span>Новости</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="help.html">
+          <span>Контакты</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="feedback.html">
+          <span>Обратная связь</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="guide.html">
+          <span>Руководство пользователя</span>
+        </a>
+      </li>
+
+    </ul>
+
+  </aside>
+
+  <main id="main" class="main">
+    <div class="card">
+      <div class="card-body">
+        <div class="col-10">
+          <h5><b>BOLZHAU</b></h5>
+          <p>Предназначена для анализа информации и составления аналитических отчетов по данным информационных систем: ИСЖ, ЕАСУ, VetMonitoring, ИАС, Процессинговый центр. Пользователь в любой момент времени может запросить актуальную информацию, удовлетворяющую определенным критериям.</p>
+        <div class="row">
+         <div class="col-10">
+          <p>Перечень критериев:</p>
+          <b><p>Визуализация данных по поголовью сельскохозяйственных животных и их владельцам отображает сведения:</p></b>
+          <ul>
+            <ul class="list">
+            <li>- о количестве сельскохозяйственных животных, в разрезе административно-территориальной единицы;</li>
+            <li>- по виду, полу, породе, дате рождения животного;</li>
+            <li>- данные о владельце животного, в разрезе типа собственности.</li>
+            <li>Эта визуализация позволяет следить за популяцией животных и их характеристиками на различных уровнях детализации, а также может помочь в идентификации категорий владельцев и их влиянии на сельскохозяйственную животноводческую деятельность.</li>
+          </ul>
+          <p><b>Визуализация по вакцинации и диагностическим исследованиям сельскохозяйственных животных:</b></p>
+          <ul class="list">
+            <li>- о количестве животных, в отношении которых проведена вакцинация и диагностические исследования и их результаты (охват в %-ом соотношении);</li>
+            <li>- о количестве животных, по которым отсутствует вакцинация и диагностика;</li>
+            <li>- в разрезе административно-территориальной единицы.</li>
+            <li>Данный критерий позволяет отслеживать эффективность, качество вакцинации и обеспечивать ветеринарную безопасность.</li>
+          </ul>
+          <b>Прогнозирование вспышек особо опасных заболеваний животных:</b>
+          <ul class="list">
+            <li>- информация о вакцинации против ящура и сибирской язвы, контроля качества вакцинации и циркуляции вируса на территории Республики Казахстан.</li>
+            <li>- о количестве животных, по которым отсутствует вакцинация и диагностика;</li>
+            <li>Данный критерий позволяет принять своевременные меры и снизить риски инвестиционных потерь.</li>
+          </ul>
+          </ul>
+        </div>
+        <hr>
+        <div class="col-10">
+          <b><p>Результаты:</p></b>
+          <ul>
+            <li class="list"><b>Внедрение BOLZHAU позволит:</b></li>
+            <ul class="list">
+            <li>- уменьшить трудозатраты и повысить эффективность специалистов;</li>
+            <li>- получить актуальные данные в режиме реального времени;</li>
+            <li>- управлять рисками и своевременно принимать управленческие решения.</li>
+          </ul>
+        </ul>
+        </div>
+        </div>
+      </div>
+      <p>При необходимости за более подробной информацией, просим обратится по следующему еmail: <a href="manager@acepas.kz">manager@acepas.kz</a></p>
+      </div>
+      </div>
+      </div>
+    </div>
+    
+    
+
+  </main>
+  <footer id="footer" class="footer">
+    <div class="copyright">
+  Министерство сельского хозяйства Республики Казахстан
+    </div>
+    <div class="credits">
+      Call –центр: 8(7172)79-34-19, +7(771)99-614-99 (WhatsApp)
+    </div>
+  </footer>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

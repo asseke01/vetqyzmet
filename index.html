@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="wrapper2 fixed-top d-flex align-items-center">
+    <div class="logot">
+      <button class="toggle-sidebar-btn" onclick="toggleNav()" >
+          <img src="assets/img/menu_icon.svg">Меню</img>
+          </button >
+      <a href="index.html" class="flex align-items-center">
+        <img src="assets/img/logo_icon.svg" alt="">
+      </a>
+    </div>
+
+      <div class="boxcontainer">
+            <table class="elements_container">
+              <tr>
+                <td>
+                  <input type="text" class="search" placeholder="Поиск">
+                </td>
+                <td>
+                <a href="" class=""><img src="assets/img/search_icon.svg"></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/img/line_icon.svg">
+        <div class="button_language"> 
+          <button class="languagebtn">RU<img src="assets/img/dropdown_icon.svg"></img>
+          </button>
+          <div class="language_content">
+            <a href="index.html">RU</a>
+            <a href="index.kz.html">KZ</a>        
+          </div>
+        </div>
+        <img src="assets/img/line_icon.svg">
+        <div class="button_settings"> 
+          <button class="settingsbtn">
+            <img src="assets/img/setting_icon.svg">Настройки</img>
+          </button>
+          <div class="settings_content">
+            <a class="dropdown-item none_click" href="#">Цвет сайта:</a>
+            <a class="dropdown-item" href="#"><img src="assets/img/sun_icon.png">Стандартный</a>
+            <a class="dropdown-item" href="#"><img src="assets/img/night_icon.png">Темная тема</a>
+            <a class="dropdown-item none_click" href="#">Размер шрифта:</a>
+            <a class="dropdown-item" href="#">Стандартный</a>
+            <a class="dropdown-item big_text_btn" href="#"><h5>Большой</h5></a>
+            <a class="dropdown-item enlarged_btn" href="#"><h4>Увеличенный</h4></a>        
+          </div>
+        </div>
+        <img src="assets/img/line_icon.svg">
+          <button class="loginbtn">Войти</button>
+  </div>
+  </header>
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <span>Главная</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="news.html">
+          <span>Новости</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="help.html">
+          <span>Контакты</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="feedback.html">
+          <span>Обратная связь</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="guide.html">
+          <span>Руководство пользователя</span>
+        </a>
+      </li>
+
+    </ul>
+    
+
+  </aside>
+  <main id="main" class="main2">
+      <div class="wrapper">
+        <div class="navs">
+        <div class="nav1">
+        <ul class="header_list">
+          <li class="header_item">
+            <a href="news.html" class="header_link">Новости</a>
+          </li>
+          <li class="header_item">
+            <a href="help.html" class="header_link">Контакты</a>
+          </li>
+          <li class="header_item">
+            <a href="feedback.html" class="header_link">Обратная связь</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav2">
+        <ul class="header_side">
+          <li class="header_side_item">
+            <a href="" class="header_side_link" href="index.html">Главная</a>
+          </li>
+          <li class="header_side_item">
+            <a href="news.html" class="header_side_link">Статистика</a>
+          </li>
+          <li class="header_side_item">
+            <a href="about.html" class="header_side_link">О портале</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <div class="main_icon">
+      <a href="http://82.200.160.44:2727/static/crm/login.html?angularjs_redirecturi=/dashboard.html" target="_blank"><img src="./assets/img/eacy_icon.svg" class="figure1"></a>
+      <a href="http://vetlab.gov.kz:5001/auth/login" target="_blank"><img src="./assets/img/vet_icon.svg" class="figure2"></a>
+      <a href="http://92.46.109.229:5068/login" target="_blank"><img src="./assets/img/center_icon.svg" class="figure3"></a>
+      <a href="about.html" target="_blank"><img src="./assets/img/vetqyzmet_icon.svg" class="figure4"></a>
+      <a href="http://test.iszh.kz:2022/#/main" target="_blank"><img src="./assets/img/isj_icon.svg" class="figure5"></a>
+      <a href="page6.html" target="_blank"><img src="./assets/img/bolzhau_icon.svg" class="figure6"></a>
+      <a href="page7.html" target="_blank"><img href="page7.html" src="./assets/img/tort_tulik_icon.svg " class="figure7"></a>
+      </div>
+      <div class="nav3">
+          <p>Системы:</p>
+          <ul class="system_nav">
+            <li class="system_nav_item">
+              <a class ="system_nav_link" href="page2.html">Процессинговый центр</a>
+            </li>
+            <li class="system_nav_item">
+              <a class ="system_nav_link" href="page1.html">ИСЖ</a>
+            </li>
+            <li class="system_nav_item">
+              <a class ="system_nav_link" href="page3.html">Вет.мониторинг</a>
+            </li>
+            <li class="system_nav_item">
+              <a class ="system_nav_link" href="page6.html">Bolzhau</a>
+            </li>
+            <li class="system_nav_item">
+              <a class ="system_nav_link" href="page5.html">ЕАСУ</a>
+            </li>
+            <li class="system_nav_item">
+              <a class ="system_nav_link" href="page7.html">Tört Tülık</a>
+            </li>
+          </ul>        
+      </div>
+    </div>
+  </main>
+<footer id="footer" class="footer">
+    <div class="copyright">
+  Министерство сельского хозяйства Республики Казахстан
+    </div>
+    <div class="credits">
+      Call –центр: 8(7172)79-34-19, +7(771)99-614-99 (WhatsApp)
+    </div>
+  </footer>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
