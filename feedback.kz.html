@@ -106,53 +106,67 @@
   <main id="main" class="main">
 
     <div class="card">
-
+      <div class="toast bg-success text-white" id="successToast2" style="position: absolute; top: 10px; right: 10px; width: 450px;"  data-delay="5000">
+            <div class="toast-header bg-success text-white">
+            <strong class="me-auto">Өтініш үшін рахмет!</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+            </div>
+          </div>
+          <div id="dangerToast2" class="toast bg-danger text-white" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000" style="position: absolute; top: 10px; right: 10px; width: 450px;">
+              <div class="toast-header bg-danger text-white">
+              <strong class="me-auto">Қате!</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+            </div>
+          </div>
             <div class="card-body">
               <img src="assets/img/vetqyzmet_icon_about.svg" class="logo_forms">
-              <h5><b>Кері байланыс</b></h5>
-              <form class="row g-2">
+              <h5><b>Кері байланыс</b></h5>  
+              <form class="row g-2 needs-validation" id="myform" novalidate>
                 <div class="col-md-9">
                   <label>Тегі, аты</label>
                   <div class="input-group mb-3">
                   <span class="input-group-text bg-transparent "><i class="bi bi-person-vcard text-primary"></i></span>
-                  <input type="text" class="form-control" placeholder="Сіздің тегіңіз, атыңыз">
+                  <input required type="text" class="form-control" placeholder="Сіздің тегіңіз, атыңыз" id="name">
                 </div>
                 </div>
                 <div class="col-md-9">
                   <label>Байланыс E-mail</label>
                   <div class="input-group mb-3">
                   <span class="input-group-text bg-transparent" ><i class="bi bi-envelope text-primary"></i></span>
-                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Сіздің e-mail">
+                  <input required type="email" class="form-control" aria-describedby="emailHelp" placeholder="Сіздің e-mail" id="email">
                 </div>
                 </div>
-
                 <div class="col-md-9">
                   <label>Байланыс телефоны</label>
                   <div class="input-group mb-3 ">
                   <span class="input-group-text bg-transparent" ><i class="bi bi-telephone-fill text-primary"></i></span>
-                  <input type="text" class="form-control"  placeholder="+7...">
+                  <input required type="text" class="form-control"  placeholder="+7..." id="phone" >
                 </div>
                 </div>
                 <div class="col-md-9">
-                  <label>Сіз қандай ақпараттық жүйені қолдандыңыз? </label>
+                  <label>Сіз қандай ақпараттық жүйені қолдандыңыз?</label>
                   <div class="input-group mb-3">
                   <span class="input-group-text bg-transparent" ><i class="bi bi-question-circle text-primary"></i></span>
-                  <select id="inputState" class="form-select">
+                  <select required id="inputState" class="form-select">
                     <option></option>
-                    <option>Идентификация сельскохозяйственных животных</option>
-                    <option>Мобильное приложение «VetMobile», для ветеринарного врача</option>
-                    <option>Мобильное приложение «Tort Tylik», для владельцев сельскохозяйственных животных</option>
-                    <option>Информационная система «Процессинговый центр»</option>
-                    <option>Информационная система «Ветеринарная санитарная экспертиза»</option>
-                    <option>Информационная система «VetLab»</option>
-                    <option>Информационная система «Ветеринарная безопасность»</option>
-                    <option>Информационная система «Карантин растений»</option>
-                    <option>Информационная система «Государственная регистрация сельскохозяйственной техники»</option>
+                    <option>Бірыңғай автоматтандырылған басқару жүйесі (БАБЖ)</option>
+                    <option>Ветеринариялық дәрігерге арналған «VetMobile» мобильді қосымшасы</option>
+                    <option>Ауыл шаруашылығы жануарларының иелеріне арналған «Tort tylik» мобильді қосымшасы</option>
+                    <option>«Процессингтік орталық» ақпараттық жүйесі</option>
+                    <option>«Ветеринариялық санитариялық сараптама» ақпараттық жүйесі</option>
+                    <option>«VetLab» ақпараттық жүйесі</option>
+                    <option>«Ветеринариялық қауіпсіздік» ақпараттық жүйесі</option>
+                    <option>«Өсімдіктер карантині» ақпараттық жүйесі</option>
+                    <option>«Ауыл шаруашылығы техникасын мемлекеттік тіркеу» ақпараттық жүйесі</option>
                   </select>
                 </div>
                 </div>
                 <div class="col-9">
-                <label for="exampleFormControlTextarea1">Егер сізде сайтты жақсарту бойынша ұсыныстар болса немесе бетте қате тапсаңыз, бізге хабарлаңыз (хабарлама мәтіні) </label>
+                <label for="exampleFormControlTextarea1">Егер сізде сайтты жақсарту бойынша ұсыныстар болса немесе бетте қате тапсаңыз, бізге хабарлаңыз (хабарлама мәтіні)</label>
                 <div class="input-group mb-3">
                 <span class="input-group-text bg-transparent" id="basic-addon1"><i class="bi bi-chat-left-text-fill text-primary"></i></span>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
@@ -160,12 +174,10 @@
                 </div>
               <div class="col-9">
                 <input class="form-control" type="file" id="formFile">
+              </div >
+              <div class="col-8 text-center">
+              <button type="submit" class="btn btn-primary" id="myBtn">Жіберу</button>
               </div>
-              </form>
-              <br>
-                <div class="button_form text-center">
-                  <button type="submit" class="btn btn-primary">Жіберу</button>
-                </div>
               </form>
             </div>
           </div>
@@ -182,6 +194,11 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
 
   <script src="assets/js/main.js"></script>
 
